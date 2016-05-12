@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ghosthuntermazepsdbackground"
+    android:id="@+id/framelay">
+
+    <dab4au.cs2110.virginia.edu.ghosthunter.TestView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dip"
+        android:id="@+id/the_canvas"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:id="@+id/bright"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/right"
+            android:layout_alignTop="@+id/bdown"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/bleft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/left"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/bdown" />
+
+        <ImageButton
+            android:id="@+id/bdown"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/down"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/bright" />
+
+        <ImageButton
+            android:id="@+id/bup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/up"
+            android:layout_above="@+id/bright"
+            android:layout_toStartOf="@+id/bright" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/bshoot"
+            android:src="@drawable/shootbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
